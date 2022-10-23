@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {                        
+    "target": "ES2017",                               
+    "module": "commonjs",                           
+    "outDir": "./dist",                             
+    "rootDir": ".",                             
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,                       
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "allowJs": true
+  },
+  "exclude":[
+    "./node_modules",
+    "./protos/*.ts",
+    "./dist",
+    "./*.test.ts"
+  ]
+}
