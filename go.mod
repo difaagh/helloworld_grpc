@@ -3,7 +3,6 @@ module helloworld_grpc
 go 1.19
 
 require (
-	github.com/difaagh/helloworld_proto v0.0.0-20221022162444-5585c1920d8b
 	github.com/stretchr/testify v1.8.0
 	golang.org/x/net v0.1.0
 	google.golang.org/grpc v1.50.1
@@ -11,6 +10,7 @@ require (
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/difaagh/helloworld_proto v0.0.0-20221023034442-50bdde6ca857 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	golang.org/x/sys v0.1.0 // indirect

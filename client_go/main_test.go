@@ -7,7 +7,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/difaagh/helloworld_proto"
+	"github.com/difaagh/helloworld_proto/stub/go/protos/helloworld"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/test/bufconn"
@@ -18,7 +18,7 @@ func dialer() func(context.Context, string) (net.Conn, error) {
 
 	s := grpc.NewServer()
 
-	helloworld_proto.RegisterGreeterServer(s, &server.Server{})
+	helloworld.RegisterGreeterServer(s, &server.Server{})
 
 	go func() {
 		if err := s.Serve(listener); err != nil {
@@ -38,8 +38,8 @@ func TestSayHello(t *testing.T) {
 		t.Fatalf("Failed to dial bufnet: %v", err)
 	}
 	defer conn.Close()
-	client := helloworld_proto.NewGreeterClient(conn)
-	resp, err := client.SayHello(ctx, &helloworld_proto.HelloRequest{Name: "Test"})
+	client := helloworld.NewGreeterClient(conn)
+	resp, err := client.SayHello(ctx, &helloworld.HelloRequest{Name: "Test"})
 	if err != nil {
 		t.Fatalf("SayHello failed: %v", err)
 	}

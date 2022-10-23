@@ -5,7 +5,7 @@ import (
 	"helloworld_grpc/server"
 	"net"
 
-	"github.com/difaagh/helloworld_proto"
+	"github.com/difaagh/helloworld_proto/stub/go/protos/helloworld"
 	"google.golang.org/grpc"
 )
 
@@ -17,7 +17,7 @@ func main() {
 		panic(err)
 	}
 	s := grpc.NewServer()
-	helloworld_proto.RegisterGreeterServer(s, &server.Server{})
+	helloworld.RegisterGreeterServer(s, &server.Server{})
 	fmt.Printf("server Listening at %v\n", serv.Addr())
 	if err := s.Serve(serv); err != nil {
 		panic(fmt.Sprintf("failed to serve: %v", err))

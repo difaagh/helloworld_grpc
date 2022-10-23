@@ -3,6 +3,14 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/difaagh/helloworld_proto v0.0.0-20221022162444-5585c1920d8b h1:qq32sG1KkkHTxL4XMMibrQyp8SOwNLfVvpJSdyvwuuc=
 github.com/difaagh/helloworld_proto v0.0.0-20221022162444-5585c1920d8b/go.mod h1:luUEgi87ekEwth94sdj28CjalFlsb/u6cUSxIJZenqI=
+github.com/difaagh/helloworld_proto v0.0.0-20221022183902-f2a514015cf3 h1:aXaXKui+B5WLt5Vzq2ebZzwU378p3doXQvkJjJgZCPk=
+github.com/difaagh/helloworld_proto v0.0.0-20221022183902-f2a514015cf3/go.mod h1:luUEgi87ekEwth94sdj28CjalFlsb/u6cUSxIJZenqI=
+github.com/difaagh/helloworld_proto v0.0.0-20221023024957-c2f7dd12d56a h1:tX1TtsiNTYNinHOn3r/mCCs6pCTC/qjg3MacitvEN20=
+github.com/difaagh/helloworld_proto v0.0.0-20221023024957-c2f7dd12d56a/go.mod h1:luUEgi87ekEwth94sdj28CjalFlsb/u6cUSxIJZenqI=
+github.com/difaagh/helloworld_proto v0.0.0-20221023031726-7a882fabbc93 h1:aojzcLsCC3PB2yVcqDocja0lZ0TTWiXKeRI1mxQkyKc=
+github.com/difaagh/helloworld_proto v0.0.0-20221023031726-7a882fabbc93/go.mod h1:luUEgi87ekEwth94sdj28CjalFlsb/u6cUSxIJZenqI=
+github.com/difaagh/helloworld_proto v0.0.0-20221023034442-50bdde6ca857 h1:XvfjEDmJoch8LzxbPTiEZXvl6XW76s31ieRr5jCjg18=
+github.com/difaagh/helloworld_proto v0.0.0-20221023034442-50bdde6ca857/go.mod h1:luUEgi87ekEwth94sdj28CjalFlsb/u6cUSxIJZenqI=
 github.com/golang/protobuf v1.5.0/go.mod h1:FsONVRAS9T7sI+LIUmWTfcYkHO4aIWwzhcaSAoJOfIk=
 github.com/golang/protobuf v1.5.2 h1:ROPKBNFfQgOUMifHyP+KYbvpjbdoFNs+aK7DXlji0Tw=
 github.com/golang/protobuf v1.5.2/go.mod h1:XVQd3VNwM+JqD3oG2Ue2ip4fOMUkwXdXDdiuN0vRsmY=

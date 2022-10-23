@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/difaagh/helloworld_proto"
+	"github.com/difaagh/helloworld_proto/stub/go/protos/helloworld"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -14,7 +14,7 @@ type mockServer struct {
 	*Server
 }
 
-func (*mockServer) SayHello(ctx context.Context, in *helloworld_proto.HelloRequest) (*helloworld_proto.HelloReply, error) {
+func (*mockServer) SayHello(ctx context.Context, in *helloworld.HelloRequest) (*helloworld.HelloReply, error) {
 	is_called = true
 	return nil, nil
 }
@@ -25,6 +25,6 @@ func newServer() *mockServer {
 
 func TestServer(t *testing.T) {
 	s := newServer()
-	s.SayHello(context.Background(), &helloworld_proto.HelloRequest{Name: "Test"})
+	s.SayHello(context.Background(), &helloworld.HelloRequest{Name: "Test"})
 	assert.True(t, is_called)
 }
